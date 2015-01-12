@@ -124,13 +124,13 @@ Boolean flag;
 }
 -(void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     if (flag) {
-    if ([[resultsArray objectAtIndex:row] isEqualToString:@"Select Course"]) {
-        course.text= @"";
-    } else {
-        course.text=[resultsArray objectAtIndex:row];
-    }
-    }else{
         if ([[resultsArray objectAtIndex:row] isEqualToString:@"Select Course"]) {
+            course.text= @"";
+        } else {
+            course.text=[resultsArray objectAtIndex:row];
+        }
+    }else{
+        if ([[resultsArray objectAtIndex:row] isEqualToString:@"Select Grade"]) {
             grade.text= @"";
         } else {
             grade.text=[resultsArray objectAtIndex:row];
