@@ -11,6 +11,7 @@
 
 @interface LoginViewController : UIViewController <GPPSignInDelegate>
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
 - (IBAction)SignInGoogle:(id)sender;
 

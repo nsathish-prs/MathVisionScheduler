@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TopicsViewController : UIViewController
+@interface TopicsViewController : UITableViewController
 
 
 @end

@@ -34,6 +34,9 @@
 		E97AE7CD1A622DA30089D7CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97AE7C21A622DA20089D7CF /* SystemConfiguration.framework */; };
 		E97AE7CE1A622DA30089D7CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97AE7C31A622DA20089D7CF /* UIKit.framework */; };
 		E97AE7D11A622DCC0089D7CF /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97AE7D01A622DCC0089D7CF /* DataModel.m */; };
+		E9A9AC231A739D3E00054E5F /* CourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9AC221A739D3E00054E5F /* CourseViewController.m */; };
+		E9A9AC261A74D15B00054E5F /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9AC251A74D15B00054E5F /* OptionsViewController.m */; };
+		E9C36BFB1A737C42008E557A /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C36BFA1A737C42008E557A /* NIDropDown.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,12 @@
 		E97AE7C31A622DA20089D7CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E97AE7CF1A622DCC0089D7CF /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
 		E97AE7D01A622DCC0089D7CF /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		E9A9AC211A739D3E00054E5F /* CourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseViewController.h; sourceTree = "<group>"; };
+		E9A9AC221A739D3E00054E5F /* CourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseViewController.m; sourceTree = "<group>"; };
+		E9A9AC241A74D15B00054E5F /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
+		E9A9AC251A74D15B00054E5F /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+		E9C36BF91A737C42008E557A /* NIDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIDropDown.h; sourceTree = "<group>"; };
+		E9C36BFA1A737C42008E557A /* NIDropDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIDropDown.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +146,8 @@
 		E97AE75E1A6219830089D7CF /* MathVision_Scheduler */ = {
 			isa = PBXGroup;
 			children = (
+				E9C36BF91A737C42008E557A /* NIDropDown.h */,
+				E9C36BFA1A737C42008E557A /* NIDropDown.m */,
 				E97AE78D1A621DFA0089D7CF /* Images */,
 				E97AE7631A6219830089D7CF /* AppDelegate.h */,
 				E97AE7641A6219830089D7CF /* AppDelegate.m */,
@@ -152,6 +163,10 @@
 				E97AE76F1A6219830089D7CF /* Images.xcassets */,
 				E97AE7711A6219830089D7CF /* LaunchScreen.xib */,
 				E97AE75F1A6219830089D7CF /* Supporting Files */,
+				E9A9AC211A739D3E00054E5F /* CourseViewController.h */,
+				E9A9AC221A739D3E00054E5F /* CourseViewController.m */,
+				E9A9AC241A74D15B00054E5F /* OptionsViewController.h */,
+				E9A9AC251A74D15B00054E5F /* OptionsViewController.m */,
 			);
 			path = MathVision_Scheduler;
 			sourceTree = "<group>";
@@ -263,6 +278,7 @@
 				TargetAttributes = {
 					E97AE75B1A6219830089D7CF = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9PGSU874U4;
 					};
 					E97AE7771A6219830089D7CF = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -319,11 +335,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E97AE76B1A6219830089D7CF /* TopicsViewController.m in Sources */,
+				E9A9AC231A739D3E00054E5F /* CourseViewController.m in Sources */,
 				E97AE7651A6219830089D7CF /* AppDelegate.m in Sources */,
 				E97AE7681A6219830089D7CF /* SubjectsViewController.m in Sources */,
 				E97AE7621A6219830089D7CF /* main.m in Sources */,
 				E97AE78A1A621D7B0089D7CF /* LoginViewController.m in Sources */,
 				E97AE7D11A622DCC0089D7CF /* DataModel.m in Sources */,
+				E9C36BFB1A737C42008E557A /* NIDropDown.m in Sources */,
+				E9A9AC261A74D15B00054E5F /* OptionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,14 +466,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MathVision_Scheduler",
 				);
 				INFOPLIST_FILE = MathVision_Scheduler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -462,14 +485,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MathVision_Scheduler",
 				);
 				INFOPLIST_FILE = MathVision_Scheduler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

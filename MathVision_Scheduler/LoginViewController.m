@@ -20,15 +20,22 @@
 DataModel *dm;
 GPPSignIn *signIn;
 
+
+@synthesize spinner;
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [spinner startAnimating];
     signIn = [GPPSignIn sharedInstance];
-    signIn.clientID = @"12789339619-ijmpp5eqhgthan228r51a7l1fhslkbl9.apps.googleusercontent.com";
+    signIn.clientID =dm.kClientId;
     signIn.shouldFetchGooglePlusUser = YES;
     signIn.shouldFetchGoogleUserEmail = YES;
     signIn.scopes = @[ @"profile" ];
     signIn.delegate = self;
     [signIn trySilentAuthentication];
+    
+    
 }
 - (void)viewWillAppear:(BOOL)animated{
     
@@ -44,12 +51,15 @@ GPPSignIn *signIn;
     if (!error) {
     [self performSegueWithIdentifier:@"loginSuccess" sender:self];
     }
+    [spinner stopAnimating];
 }
 
 - (void)didDisconnectWithError:(NSError *)error{
+    [spinner stopAnimating];
 //    NSLog(@"%@",error);
 }
 - (IBAction)SignInGoogle:(id)sender {
+    [spinner startAnimating];
     [signIn authenticate];
 }
 @end

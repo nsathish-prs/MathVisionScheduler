@@ -10,8 +10,16 @@
 
 @interface DataModel : NSObject{
     NSString *kClientId;
+    NSString *URL;
+    NSString *course;
+    NSString *subject;
+    NSString *topic;
 }
 
 @property(strong,nonatomic) NSString *kClientId;
+@property(strong,nonatomic) NSString *URL;
+@property (strong, nonatomic) NSString *course;
+@property (strong, nonatomic) NSString *subject;
+@property (strong, nonatomic) NSString *topic;
 
 @end

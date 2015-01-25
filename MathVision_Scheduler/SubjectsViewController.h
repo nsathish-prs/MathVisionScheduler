@@ -8,16 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SubjectsViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>
+@interface SubjectsViewController : UIViewController <UITextFieldDelegate,UITableViewDataSource,UITableViewDelegate>{
+    }
 
-@property (weak, nonatomic) IBOutlet UITextField *course;
-@property (weak, nonatomic) IBOutlet UITextField *grade;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *donePickerView;
-@property (weak, nonatomic) IBOutlet UIView *pickerView;
-@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+@property (weak, nonatomic) IBOutlet UITableView *tableViewSubjects;
+@property (weak, nonatomic) IBOutlet UIButton *CourseText;
 
-- (IBAction)loadPicker:(id)sender;
-- (IBAction)closePickerView;
+
+- (void) loadSubjectsForCourse:(NSString*)courseID;
 
 @end
 

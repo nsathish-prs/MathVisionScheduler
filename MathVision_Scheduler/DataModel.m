@@ -9,7 +9,7 @@
 #import "DataModel.h"
 
 @implementation DataModel
-@synthesize kClientId;
+@synthesize kClientId,URL,course,subject,topic;
 
 
 

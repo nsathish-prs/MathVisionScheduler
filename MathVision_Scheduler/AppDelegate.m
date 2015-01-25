@@ -19,6 +19,9 @@
 DataModel *dm;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    dm = [[DataModel alloc]init];
+    dm.URL = @"http://192.168.1.11/SchedulerService/Service.svc";
+    dm.kClientId =  @"12789339619-ijmpp5eqhgthan228r51a7l1fhslkbl9.apps.googleusercontent.com";
     return YES;
 }
 
